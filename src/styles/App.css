@@ -1,16 +1,71 @@
 h1 {
     color: #27aedb;
     text-align: center;
-    }
-    
+}
 
-button{
+
+button {
     color: #27aedb;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.bg-pink{
-	background-color:pink;
+.bg-pink {
+    background-color: pink;
+}
+
+#main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.dropdowns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.dropdown-panel {
+    display: grid;
+    align-content: start;
+    gap: 12px;
+    min-width: 0;
+}
+
+.dropdown-panel select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #aebcc3;
+    border-radius: 4px;
+    background: #fff;
+    color: #24343a;
+    font: inherit;
+}
+
+.selection-details {
+    min-height: 120px;
+    padding: 14px;
+    border: 1px solid #d5e0e4;
+    border-radius: 4px;
+    background: #f4f8f9;
+}
+
+.selection-name {
+    margin-bottom: 8px;
+    color: #176b78;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.selection-description {
+    color: #34464d;
+    line-height: 1.5;
+}
+
+@media (max-width: 680px) {
+    .dropdowns {
+        grid-template-columns: 1fr;
+    }
 }
